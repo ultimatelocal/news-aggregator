@@ -1,7 +1,6 @@
 # news-aggregator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+An Ember Application (es6) simple news aggregator that pulls data from (https://newsapi.org/) Rest API and serializes and stored to ember-data backend store.
 
 ## Prerequisites
 
@@ -23,28 +22,24 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4020).
 
-### Code Generators
+## Quick Tour:
 
-Make use of the many generators for code, try `ember help generate` for more details
+### Technologies used:
+* Ember.js
+* REST API (https://newsapi.org/)
+* Es6
+* ember-cli-sass
+* Bootstrap 4
+* HTML and css programming
 
-### Running Tests
+### Database Layer:
+* All models are under `news-aggregator/app/models/`
+* See serialization of (https://newsapi.org/) REST API to be a JSON specs compliant data on : `news-aggregator/app/serializers`
 
-* `ember test`
-* `ember test --server`
+### Application Layer:
+* Routings under `news-aggregator/app/router.js`
+* Using pods MVC structure for hierarchical file structure
+* View, Controller,Components and Helpers are under `news-aggregator/app/pods/..`
 
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](https://emberjs.com/)
-* [ember-cli](https://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### SCSS FILES:
+* All scss files colors and variables are under `news-aggregator/app/styles/..`
