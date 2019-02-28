@@ -1,0 +1,12 @@
+<div class="card">
+  <img class="card-img-top" src={{model.urlToImage}} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{model.title}}</h5>
+    <p class="card-text">
+      {{model.content}}
+    </p>
+  </div>
+  <div class="card-footer text-muted">
+   {{#link-to "home.news-articles"}} Go Back {{/link-to}}
+  </div>
+</div>

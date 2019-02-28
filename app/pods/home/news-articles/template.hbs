@@ -1,0 +1,6 @@
+<div class="row">
+  {{log newsArticles}}
+  {{#each newsArticles as |item|}}
+    {{news-cards data=item}}
+  {{/each}}
+</div>

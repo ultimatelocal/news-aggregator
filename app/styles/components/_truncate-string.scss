@@ -1,0 +1,13 @@
+.truncate-string {
+  position: relative;
+
+  > .full {
+    display: none;
+    background: $gray;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+    z-index: 1;
+    padding: 3px;
+  }
+}

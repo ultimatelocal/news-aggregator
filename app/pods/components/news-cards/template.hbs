@@ -1,0 +1,10 @@
+<div class="item-card">
+  <img src={{data.urlToImage}} alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title"> {{data.title}} </h5>
+    <p class="card-text"> {{truncate-string data.description length=30 urlParam=data.id}} </p>
+  </div>
+  <div class="footer">
+   <a href={{data.url}} target="_blank"> Go to source </a>
+  </div>
+</div>
